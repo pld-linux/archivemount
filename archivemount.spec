@@ -1,7 +1,7 @@
 Summary:	FUSE based filesystem for mounting archives
 Name:		archivemount
 Version:	0.9.1
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Applications/System
 Source0:	https://www.cybernoia.de/software/archivemount/%{name}-%{version}.tar.gz
@@ -11,6 +11,7 @@ BuildRequires:	libarchive-devel
 BuildRequires:	libfuse-devel >= 2.6
 BuildRequires:	pkgconfig
 Requires:	libfuse >= 2.6
+Requires:	libfuse-tools >= 2.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
